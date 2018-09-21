@@ -1,0 +1,243 @@
+
+/* Center website */
+.main {
+    max-width: 960px;
+    margin: auto;
+}
+
+body{
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/grey_ricepaper.jpg");
+    background-color: #cccccc;
+    overflow: hidden;
+}
+
+
+.header{
+    height: 110px;
+    background-color: #ffffff;
+    border-bottom-style: solid;
+    border-bottom-color:darkgray;
+    border-bottom-width: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+   position: fixed;
+    background:#4aaaa5;
+    color: white;
+    text-align: center;
+    margin: 10;
+    top: 0;
+    left: 10;
+    padding: 10px 10px 10px 10px;
+    height: 80px;
+    width: 160px;
+    font-size: 30px;
+    font-weight: bold
+}
+
+    /* NAVIGATION BUTTONS */
+
+#nav_bar {
+   
+    margin: auto;
+    border-bottom: gray;
+    width: 860px;
+    padding: 0px 20px 0px 20px;
+    height: 64px;
+}
+
+#nav_bar ul {
+    position: fixed;
+    top: 40;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+
+}
+
+#nav_bar ul li {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    border-right: 1px solid #bbb;
+}
+
+#nav_bar ul :last-child{
+    border-right: none;
+}
+#nav_bar ul li a{
+    color: #999999;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-bottom: none;
+    display: inline-block;
+
+}
+
+#nav_bar ul li a:hover {
+    background-color: ghostwhite
+}
+
+a.active{
+    background-color: #6daecc;
+}
+
+    /* CONTENT */
+
+.Content {
+    position: fixed;
+    background:#ffffff;
+    margin: 100;
+    top: 50;
+    left: 0;
+    height: 600px;
+    width: 800px;
+    padding: 10px 10px 10px 10px;
+    border-color: #dddddd;
+    }
+  
+ h2{
+    padding: 10px 10px 10px 10px;
+    color:#4aaaa5;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    border-bottom-style: solid;
+    border-bottom-color: darkgray;
+    border-bottom-width: 2px;
+    font-weight: bold;
+ }   
+
+ p{
+     font-family: Arial, Helvetica, sans-serif;
+     padding: 20px 20px 20px 20px;
+     line-height: 1;
+    letter-spacing: 2px;
+ }
+
+ #bioimg{
+    float:left;
+    width:200px;
+    height:200px;
+    padding: 10px 10px 10px 10px;
+ }
+
+
+ /* FOOTER */
+
+ footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .foot1{
+    background-color:#4aaaa5;
+    height: 5px;
+  }
+  .foot2{
+    background-color:rgb(146, 144, 144);
+    height: 40px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+   
+} 
+    /* CONTACT PAGE INPUT */
+  
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+    vertical-align: top;
+    font-family: Arial, Helvetica, sans-serif;
+    size: 80px;
+}
+
+input[type=submit] {
+    width: 20%;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(21, 37, 37);
+}
+
+textarea {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    width: 100%;
+    padding: 12px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height:200px;
+    border: 1px solid #ccc;
+}
+
+/* PORTFOLIO GALLERY PAGE */
+
+h4{
+    position: relative;
+    margin-top: -20%;
+    text-align: center;
+    background-color: #4aaaa5;
+    font-weight: bold;
+    color: white;
+    width: 70%;
+
+}
+
+img{
+    width: 70%;
+    align-content: center;
+}
+
+.row,.row2, .row3
+ {
+    margin: 8px 10px;
+    align-content: center;
+    padding: 20px 20px 20px 20px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    
+}
+/* Add padding BETWEEN each column */
+.row, .row > .column {
+    padding: 20px;
+}
+
+.row2, .row2 > .column {
+    padding: 20px;
+}
+
+.row3, .row3 > .column {
+    padding: 20px;
+}
+
+/* Clear floats after rows */ 
+.row, .row2, .row3:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
